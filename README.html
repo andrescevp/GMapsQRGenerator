@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h1>Installation</h1>
+            <h2>Requirements</h2>
+            <ul>
+                <li>GD lib</li>
+            </ul>
+
+            <h2>Instruccions</h2>
+            <p>Copy/paste <code>lib</code> folder.</p>
+            <p>Make a <code>require 'lib/autoloader';</code> in the <code>IndexFile</code></p>
+            <p>On <code>IndexFile</code> you must specify:</p>
+            <ul>
+                <li>Longitude</li>
+                <li>Latitude</li>
+                <li>Folder from QR images</li>
+                <li>Name fron QR image</li>
+            </ul>
+            <p>Is strictly necessary write permission for <code>PHPQRCodemake/cache</code> and the <strong>images folder</strong></p>
+            
+            <h2>How works</h2>
+            <h3>QRGMapsLinker</h3>
+            <p>Make a GoogleMaps link: <code>PHPGMapsLinker\Linker::makeLink($latitude, $longitude);</code></p>
+            <h3>QRCodeGenerator</h3>
+            <p>Clean cache: <code>QRtools::cleanCache();</code></p>
+            <p>(Re)Build cache: <code>QRtools::buildCache();</code></p>
+            <p>Make a QRCode: <code>QRcode::png('QRCode', 'path/name.png', 'L', 4, 2);</code></p>
+
+        </div>
+    </body>
+</html>

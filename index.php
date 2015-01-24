@@ -8,7 +8,7 @@ $latitude = "47.738074";
 $longitude = "8.969400";
 
 //assing images path and image name
-$qrpath = "tmp/";
+$qrpath = "tmp/";  
 $qrname = "test.png";
 
 //make the link

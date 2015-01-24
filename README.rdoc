@@ -1,0 +1,31 @@
+First, thanks
+
+This little plugin is based by aferrandini/PHPQRCode.
+Installation
+Requirements
+
+    GD lib
+
+Instruccions
+
+Make a require 'lib/autoloader'; in the IndexFile
+
+On IndexFile you must specify:
+
+    Longitude
+    Latitude
+    Folder from QR images
+    Name fron QR image
+
+Is strictly necessary write permission for PHPQRCodemake/cache and the images folder
+How works
+QRGMapsLinker
+
+Make a GoogleMaps link: PHPGMapsLinker\Linker::makeLink($latitude, $longitude);
+QRCodeGenerator
+
+Clean cache: QRtools::cleanCache();
+
+(Re)Build cache: QRtools::buildCache();
+
+Make a QRCode: QRcode::png('QRCode', 'path/name.png', 'L', 4, 2);
